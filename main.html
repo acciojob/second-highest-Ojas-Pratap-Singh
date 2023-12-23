@@ -18,7 +18,7 @@
 				}
 			}
 
-			let maxsec = arr[0];
+			let maxsec = MIN_VALUE;
 			for (var i = 0; i < arr.length; i++) {
 				if(arr[i]>maxsec && arr[i] != max){
 					maxsec = arr[i];
@@ -30,7 +30,7 @@
 		}
 
 		function Main() {
-			var n = prompt("Enter the number of elements");
+			var n = promp("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
 				arr[i] = prompt("Enter element " + (i+1));
