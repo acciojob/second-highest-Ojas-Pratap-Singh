@@ -10,7 +10,7 @@
 	<script>
 		function secondHighest(arr) {
 			let n = arr.length;
-			if(n==0 || n==1) return "-infinity";
+			if(n==0 || n==1) return -infinity;
 			let max = arr[0];
 			for (var i = 0; i < arr.length; i++) {
 				if(arr[i]>max){
@@ -27,10 +27,12 @@
 			return maxsec;
 			
 			
+			
+			
 		}
 
 		function Main() {
-			var n = promp("Enter the number of elements");
+			var n = prompt("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
 				arr[i] = prompt("Enter element " + (i+1));
